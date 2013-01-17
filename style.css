@@ -1,5 +1,70 @@
+body * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #main-header.shootMe001 {
     
 }
+
+#main-content {
+    width:600px;
+}
+
+#ExampleContentPage-UeberschriftH1 {}
+
+#ExampleContentPage-UeberschriftH2 {}
+
+#ExampleContentPage-UeberschriftH3 {}
+
+#ExampleContentPage-UeberschriftH4 {}
+
+#ExampleContentPage-UeberschriftH5 {}
+
+#ExampleContentPage-UeberschriftH6 {}
+
+ul > li { }
+ul > li.first { }
+ul > li.last { }
+
+ul > li > ul > li { }
+ul > li > ul > li.first { }
+
+ul > li > ul > li > ul > li { }
+ul > li > ul > li > ul > li.first { }
+
+ul > li > ul > li > ul > li > ul > li { }
+ul > li > ul > li > ul > li > ul > li.first { }
+
+ul > li > ul > li > ul > li > ul > li > ul > li { }
+ul > li > ul > li > ul > li > ul > li > ul > li.first { }
+
+
+ol > li {}
+ol > li > ol > li {}
+ol > li > ol > li > ol > li {}
+
+ul.linlie-task-list li {
+}
+
+div.table-wrap table th {}
+
+div.table-wrap table td {}
+
+th.first, td.first {
+}
+
+blockquote {
+}
+
+div.panel {
+    background-color:#e5e5e5;
+}
+
+div.panelMacro {
+    background-color:#e5e5e5;
+    margin-bottom:10px;
+}
+div.panelMacro td:first {} 
+div.panelMacro td:first + td {} 
 
 
