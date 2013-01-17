@@ -67,8 +67,10 @@ div.panel {
 }
 
 div.panelMacro {
-    background-color:#e5e5e5;
     margin-bottom:10px;
+}
+div.panelMacro table.tipMacro {
+    background-color:#e5e5e5;
 }
 div.panelMacro td:first {} 
 div.panelMacro td:first + td {} 
