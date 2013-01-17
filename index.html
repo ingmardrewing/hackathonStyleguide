@@ -1,28 +1,525 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-		<meta name="generator" content="Adobe GoLive" />
-		<title>Fixed ID Test</title>
-		
-	</head>
 
-	<body>
+<html>
+<head>
+<title>hackathon styleguide</title>
+</head>
+<body>
+<div style="margin-right: 287px;" id="main" class="">
+<div id="header-print">
+<img id="logo_print" src="/download/resources/net.seibertmedia.confluence.themes.bbraun:resources/images/header/logo.png" height="35" width="144">
+</div>
+<div id="main-header">
+<h1 id="title-heading" class="pagetitle">
+<a href="/display/bbraunconf">
+<img class="logo global custom" src="/download/attachments/589826/global.logo?version=1&amp;modificationDate=1348825510000" alt="">
+</a>                            <span id="title-text">â€‹â€‹â€‹â€‹â€‹<a href="/display/bbraunconf/Example+Content+Page">Example Content Page</a>
+</span>
+</h1>
+</div>
+<!-- \#main-header -->
+<div id="sidebar-container">
+</div>
+<!-- \#sidebar-container -->
+<div id="content" class="page view">
+<div id="action-messages">
+</div>
+<script type="text/x-template" title="movePageDialog">
+<div class="row information">
+<div class="inner">
+<div class="element">Geben Sie Bereich und Ãœberschrift der neuen Ã¼bergeordneten Seite und der untergeordneten Seiten fÃ¼r diese Seite an.</div>
+</div>
+</div>
+<div class="form">
+<fieldset>
+<legend class="assistive">
+<span>Die Ãœbergeordnete Seite zu einer Bekannten Seite Ã¤ndern</span>
+</legend>
+<div class="row">
+<label for="new-space">Neuer Bereich:</label>
+<div class="value new-space-value">
+<input id="new-space-key" name="new-space-key" type="hidden" value="bbraunconf">
+<span class="space-input">
+<input id="new-space" name="new-space" value="BBraun Konfiguration">
+</span>
+<span class="description hidden">Wenn Sie beginnen, einen Bereichsnamen einzugeben, wird eine Liste mit VorschlÃ¤gen angezeigt.</span>
+<div class="new-space-dropdown aui-dd-parent autocomplete">
+</div>
+</div>
+</div>
+<div class="row">
+<label for="new-parent-page">Neue Ã¼bergeordnete Seite:</label>
+<div class="value new-parent-page-value">
+<span class="page-input">
+<input id="new-parent-page" name="new-parent-page" value="Tools and Services">
+</span>
+<span class="description">Wenn Sie beginnen, einen Seitentitel einzugeben, wird eine Liste mit VorschlÃ¤gen angezeigt.</span>
+<div class="new-parent-page-dropdown aui-dd-parent autocomplete">
+</div>
+</div>
+</div>
+</fieldset>
+</div>
+<div class="location-info">
+<div class="row">
+<label>Aktueller Speicherort:</label>
+<div class="value breadcrumbs-container">
+<div class="breadcrumbs-line">
+<ul id="current-parent-breadcrumbs" class="breadcrumbs">
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<label>Neuer Speicherort:</label>
+<div class="value breadcrumbs-container">
+<div class="breadcrumbs-line">
+<ul id="new-parent-breadcrumbs" class="breadcrumbs">
+</ul>
+</div>
+</div>
+</div>
+</div>
+</script>
+<script type="text/x-template" title="movePageSearchPanel">
+<div class="row information">
+<div class="inner">
+<div class="element">Suchen Sie die neue Ã¼bergeordnete Seite fÃ¼r diese Seite und ihre untergeordneten Seiten und wÃ¤hlen Sie sie aus.</div>
+</div>
+</div>
+<div id="move-page-search-container" class="row">
+<div class="search-form">
+<fieldset>
+<legend class="assistive">
+<span>Nach einer Neuen Ãœbergeordneten Seite suchen</span>
+</legend>
+<label  for="move-page-search-query" class="assistive">Stichworte suchen</label>
+<input class="search-query" id="move-page-search-query">
+<label  for="move-page-search-space" class="assistive">In Bereich suchen</label>
+<select id="move-page-search-space" class="search-space">
+<option value="conf_all" selected="selected">Alle Bereiche</option>
+<option value="bbraunconf">BBraun Konfiguration</option>
+</select>
+<input type="button" value="Suchen">
+</fieldset>
+</div>
+<div class="search-results">
+</div>
+</div>
+</script>
+<script type="text/x-template" title="searchResultsGrid">
+<table>
+<thead>
+<tr class="header">
+<th class="search-result-title">Seitenname</th>
+<th class="search-result-space">Bereich</th>
+<th class="search-result-date">Aktualisiert</th>
+</tr>
+</thead>
+</table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+<p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+<tr class="search-result">
+<th class="search-result-title">
+<a href="{1}" class="content-type-{2}">
+<span>{0}</span>
+</a>
+</th>
+<td class="search-result-space">
+<a class="space" href="/display/{4}/" title="{3}">{3}</a>
+</td>
+<td class="search-result-date">
+<span class="date" title="{6}">{5}</span>
+</td>
+</tr>
+</script>
+<!-- Start restrictions section -->
+<script type="text/x-template" title="page-permissions-div">
+<div id="page-permissions-div">
+<div id="page-permissions-editor-form">
+<div id="page-permissions-error-div" class="hidden">
+<a href="#" id="permissions-error-div-close">OK</a>
+<div>
+</div>
+</div>
+<div id="page-permissions-type-radios" class="page-permissions-label-rows">
+<div>
+<input id="restrictViewRadio" type="radio" checked="checked" name="pagePermissionTypeRadio" value="view"/>
+<label for="restrictViewRadio">Anzeige dieser Seite beschrÃ¤nken</label>
+<input id="restrictEditRadio" type="radio" name="pagePermissionTypeRadio" value="edit"/>
+<label for="restrictEditRadio">Bearbeitung dieser Seite beschrÃ¤nken</label>
+</div>
+</div>
+<div id="page-permissions-input" class="page-permissions-label-rows">
+<div class="page-permissions-label">An:</div>
+<div id="page-permissions-chooser-box">
+<span id="page-permissions-choose-me" class="ajs-button normal">
+<img class="permission-entity-picture" src="/download/attachments/589825/admin-55462-pp-412ifurn95l._sl500_aa300_.jpg?version=1&amp;modificationDate=1357727053000" border="0" alt="Ich" align="absmiddle"/>
+<a href="#">Ich</a>
+<span class="remote-user-name hidden">admin</span>
+</span>
+<span id="page-permissions-choose-user" class="ajs-button">
+<a href="#" id='userpicker-popup-link-image' onClick="var picker = window.open('/spaces/openuserpicker.action?key=bbraunconf&amp;startIndex=0&amp;onPopupSubmit=AJS.PagePermissions.addUserPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=700,height=680,scrollbars=yes'); picker.focus(); return false;">
+<img src="/s/en_GB/3388/9acf9d4587944743d0223df28e632431d99e8a2b.27/_/images/icons/user_16.gif" height=16 width=16 border=0 align="absmiddle"  title="Choose users" />
+</a>
+<a href="#" id='userpicker-popup-link-text' onClick="var picker = window.open('/spaces/openuserpicker.action?key=bbraunconf&amp;startIndex=0&amp;onPopupSubmit=AJS.PagePermissions.addUserPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=700,height=680,scrollbars=yes'); picker.focus(); return false;">Person ...</a>
+</span>
+<span id="page-permissions-choose-group" class="ajs-button">
+<a href="#" id='grouppicker-popup-link-image' onClick="var picker = window.open('/spaces/opengrouppicker.action?key=bbraunconf&amp;startIndex=0&amp;actionName=dosearchgroups.action&amp;onPopupSubmit=AJS.PagePermissions.addGroupPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=580,height=550,scrollbars=yes'); picker.focus(); return false;">
+<img src="/s/en_GB/3388/9acf9d4587944743d0223df28e632431d99e8a2b.27/_/images/icons/group_16.gif" height=16 width=16 border=0 align="absmiddle"  title="Choose groups" />
+</a>
+<a href="#" id='grouppicker-popup-link-text' onClick="var picker = window.open('/spaces/opengrouppicker.action?key=bbraunconf&amp;startIndex=0&amp;actionName=dosearchgroups.action&amp;onPopupSubmit=AJS.PagePermissions.addGroupPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=580,height=550,scrollbars=yes'); picker.focus(); return false;">Gruppe...</a>
+</span>
+</div>
+<div id="page-permissions-input-box">
+<input type="text" id="page-permissions-names-input" name="permissionNames"placeholder="Benutzer-/Gruppennamen eingeben" class="autocomplete-user"data-max="10" data-none-message="Keine Treffer"data-target="#page-permissions-names-hidden" data-template="{username}"data-dropdown-target="#page-perms-name-dropdown-wrapper" data-resize-to-input="true"size="30"/>
+<inputtype="hidden"id="page-permissions-names-hidden"           />                <img height="16px" width="1px" src="/s/en_GB/3388/9acf9d4587944743d0223df28e632431d99e8a2b.27/_/images/border/spacer.gif"/>
+<input type="button" id="add-typed-names" value="BeschrÃ¤nken">
+<div id="page-perms-name-dropdown-wrapper" class="aui-dd-parent autocomplete">
+</div>
+</div>
+</div>
+</div>
+<div id="page-permissions-tables">
+<div id="page-permissions-table-div">
+<table id="page-permissions-table" class="page-permissions-table">
+<tr id="page-permissions-no-views" class="marker-row">
+<td colspan="3" class="page-permissions-marker-cell">
+<span>FÃ¼r diese Seite sind keine AnzeigebeschrÃ¤nkungen festgelegt.</span>
+</td>
+</tr>
+<tr id="page-permissions-no-edits" class="marker-row">
+<td colspan="3" class="page-permissions-marker-cell">
+<span>FÃ¼r diese Seite sind keine BearbeitungsbeschrÃ¤nkungen festgelegt.</span>
+</td>
+</tr>
+</table>
+</div>
+<div id="page-inherited-permissions-table-div" class="hidden">
+<span id="page-inherited-permissions-table-desc">
+<a class="icon twisty-closed">Ein-/Ausblenden</a>
+<a id="toggle-inherited-permissions" title="Ãœbernommene BeschrÃ¤nkungen durch Klicken anzeigen">Diese Seite enthÃ¤lt beschrÃ¤nkte Ã¼bergeordnete Seiten. Sie kann nur von Benutzern verwendet werden, die diese Ã¼bergeordneten Seiten sehen kÃ¶nnen.</a>
+</span>
+<div id="page-inherited-permissions-tables" class="hidden page-inheritance-togglable">
+</div>
+</div>
+</div>
+</div>
+</script>
+<!-- End restrictions section -->
+<a href="#page-metadata-end" class="assistive">Zum Ende der Metadaten springen</a>
+<div id="page-metadata-start" class="assistive">
+</div>
+<div class="page-metadata">
+<ul>
+<li class="page-metadata-item noprint first">
+<a id="content-metadata-page-restrictions" href="#" class="page-metadata-icon page-restrictions hidden" title="Es gelten SeitenbeschrÃ¤nkungen. Klicken Sie auf das Sperrsymbol, um die BeschrÃ¤nkungen anzuzeigen oder zu bearbeiten.">
+<span>Es gelten SeitenbeschrÃ¤nkungen</span>
+</a>        </li>
+<li class="page-metadata-modification-info last">HinzugefÃ¼gt von <a data-user-hover-bound="true" title="" href="/display/~admin" class="url fn confluence-userlink userlink-0" data-username="admin">Administrator and Chief Master of BKC-BBRAUN WIKI</a>, zuletzt bearbeitet von <a data-user-hover-bound="true" title="" href="/display/~admin" class="url fn confluence-userlink userlink-0" data-username="admin">Administrator and Chief Master of BKC-BBRAUN WIKI</a> am Okt 25, 2012<span class="noprint">&nbsp;(<a id="view-change-link" href="/pages/diffpages.action?pageId=1441977&amp;originalId=1441989">Ã„nderung anzeigen</a>)</span>
+</li>
+</ul>
+</div>
+<a href="#page-metadata-start" class="assistive">Zum Anfang der Metadaten</a>
+<div id="page-metadata-end" class="assistive">
+</div>
+<div id="main-content" class="wiki-content">
+<p>
+</p>
+<div>
+<ul>
+<li class="first">
+<a href="#ExampleContentPage-ÃœberschriftH1">Ãœberschrift H1</a>
+</li>
+<ul>
+<li class="first">
+<a href="#ExampleContentPage-ÃœberschriftH2">Ãœberschrift H2</a>
+</li>
+<ul>
+<li class="first">
+<a href="#ExampleContentPage-ÃœberschriftH3">Ãœberschrift H3</a>
+</li>
+<ul>
+<li class="first">
+<a href="#ExampleContentPage-ÃœberschriftH4">Ãœberschrift H4</a>
+</li>
+<ul>
+<li class="first">
+<a href="#ExampleContentPage-ÃœberschriftH5">Ãœberschrift H5</a>
+</li>
+<ul>
+<li class="first last">
+<a href="#ExampleContentPage-ÃœberschriftH6">Ãœberschrift H6</a>
+</li>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+</ul>
+</div>
+<p>
+</p>
+<h1 id="ExampleContentPage-ÃœberschriftH1">Ãœberschrift H1</h1>
+<p>Lorem ipsum dolor <a href="http://www.bbraun.de" class="external-link" rel="nofollow">
+<span>Externer Link</span>
+</a>
+<span>&nbsp;</span>sit amet, consetetur sadipscilitr, sed diam num eirmod tempur invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea reb. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h2 id="ExampleContentPage-ÃœberschriftH2">Ãœberschrift H2</h2>
+<p>Lorem ipsum amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea reb. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h3 id="ExampleContentPage-ÃœberschriftH3">Ãœberschrift H3</h3>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea reb. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h4 id="ExampleContentPage-ÃœberschriftH4">Ãœberschrift H4</h4>
+<p>Lorem ipsum dolor <span>&nbsp;</span>sit amet, <a class="unresolved" href="#">Link</a> consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea reb. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h5 id="ExampleContentPage-ÃœberschriftH5">Ãœberschrift H5</h5>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea reb. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<h6 id="ExampleContentPage-ÃœberschriftH6">Ãœberschrift H6</h6>
+<p>Lorem ipsum <a class="unresolved" href="#">
+<span>&nbsp;</span>
+</a>
+<span class="confluence-link">&nbsp;</span>
+<span>&nbsp;</span>amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea reb. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<ul>
+<li class="first">AufzÃ¤hlung 1. Ebene</li>
+<li class="last">AufzÃ¤hlung 1. Ebene<ul>
+<li class="first last">AufzÃ¤hlung 2. Ebene<ul>
+<li class="first last">AufzÃ¤hlung 3. Ebene<ul>
+<li class="first last">AufzÃ¤hlung 4. Ebene<ul>
+<li class="first last">AufzÃ¤hlung 5. Ebene</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Nummerierte AufzÃ¤hlung</li>
+<li>Nummerierte AufzÃ¤hlung</li>
+<li>Nummerierte AufzÃ¤hlung<br>
+<ol>
+<li>Nummerierte AufzÃ¤hlung<br>
+<ol>
+<li>Nummerierte AufzÃ¤hlung</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<ul class="inline-task-list" data-inline-tasks-content-id="1441977">
+<li class="first" data-inline-task-id="6">Task 1</li>
+<li data-inline-task-id="7">Task 2</li>
+<li data-inline-task-id="8">Task 3</li>
+<li data-inline-task-id="9">Task 4</li>
+<li class="last" data-inline-task-id="10">Task 5</li>
+</ul>
+<div class="table-wrap">
+<table class="confluenceTable tablesorter">
+<thead>
+<tr class="first even sortableHeader">
+<th data-column="0" class="confluenceTh first sortableHeader">
+<div class="tablesorter-header-inner">Tabellenkopf 1</div>
+</th>
+<th data-column="1" class="confluenceTh sortableHeader">
+<div class="tablesorter-header-inner">Tabellenkopf 2</div>
+</th>
+<th data-column="2" class="confluenceTh last sortableHeader">
+<div class="tablesorter-header-inner">Tabellenkopf 3</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="confluenceTd">Tabelleninhalt A1</td>
+<td class="confluenceTd">Tabelleninhalt A2</td>
+<td class="confluenceTd">Tabelleninhalt A3</td>
+</tr>
+<tr class="even">
+<td class="confluenceTd">Tabelleninhalt B1</td>
+<td class="confluenceTd">Tabelleninhalt B2</td>
+<td class="confluenceTd">Tabelleninhalt B3</td>
+</tr>
+<tr class="odd">
+<td class="confluenceTd">Tabelleninhalt C1</td>
+<td class="confluenceTd">Tabelleninhalt C2</td>
+<td class="confluenceTd">Tabelleninhalt C3</td>
+</tr>
+<tr class="last even">
+<td class="confluenceTd">Tabelleninhalt D1</td>
+<td class="confluenceTd">Tabelleninhalt D2</td>
+<td class="confluenceTd">Tabelleninhalt D3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap">
+<table class="confluenceTable">
+<tbody>
+<tr class="first odd">
+<th class="confluenceTh first">
+<p class="last">Tabellenkopf 1</p>
+</th>
+<td class="confluenceTd">Tabelleninhalt A1</td>
+<td class="confluenceTd">Tabelleninhalt A2</td>
+<td class="confluenceTd">Tabelleninhalt A3</td>
+</tr>
+<tr class="even">
+<th class="confluenceTh first">Tabellenkopf 2</th>
+<td class="confluenceTd">Tabelleninhalt B1</td>
+<td class="confluenceTd">Tabelleninhalt B2</td>
+<td class="confluenceTd">Tabelleninhalt B3</td>
+</tr>
+<tr class="odd">
+<th class="confluenceTh first">Tabellenkopf 3</th>
+<td class="confluenceTd">Tabelleninhalt C1</td>
+<td class="confluenceTd">Tabelleninhalt C2</td>
+<td class="confluenceTd">Tabelleninhalt C3</td>
+</tr>
+<tr class="last even">
+<th class="confluenceTh first">Tabellenkopf 4</th>
+<td class="confluenceTd">Tabelleninhalt D1</td>
+<td class="confluenceTd">Tabelleninhalt D2</td>
+<td class="confluenceTd">Tabelleninhalt D3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<blockquote>
+<p>Zitat <br class="atl-forced-newline">Testtest testtstststs</p>
+</blockquote>
+<div class="panel" style="border-width: 1px;">
+<div class="panelHeader" style="border-bottom-width: 1px;">
+<b>Panel</b>
+</div>
+<div class="panelContent">
+<p class="last">Dieser Bereich zeichnet sich dadurch aus, dass er Ã¼ber die komplette Breite geht und mit der dargestellten Farbe hinterlegt wird. <br class="atl-forced-newline">DarÃ¼ber hinaus gibt es eine umgebende Rahmenlinie.</p>
+</div>
+</div>
+<div class="panel" style="border-width: 1px;">
+<div class="panelContent">
+<p class="last">Das ist ein Panel Ãœberschrift. Lorem ipsum, bla, bla, bla...</p>
+</div>
+</div>
+<div class="panelMacro">
+<table class="noteMacro">
+<colgroup>
+<col width="24">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td valign="top">
+<img src="/images/icons/emoticons/warning.png" alt="" align="absmiddle" border="0" height="16" width="16">
+</td>
+<td>
+<b>Hinweis</b>
+<br>
+<p class="last">Dieser Bereich zeichnet sich dadurch aus, dass er Ã¼ber die komplette Breite geht und mit der dargestellten Farbe hinterlegt wird.<br>Auch das Icon ist fÃ¼r diesen Bereich spezifisch. Optional kann das Icon entfernt werden.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-		<div id="outline">
-			<div id="text">
-                <form action="#" method="post">
-                    <input type="text" name="input1" id="input1" value="" />
-                    <select id="selecttest">
-                        <option value="two">two</option>
-                        <option value="one" selected="selected">one</option>
-                    </select><br />
-                    <input type="radio" name="gender" value="male" /> male <br />
-                    <input type="radio" name="gender" value="female" /> female 
-                </form>
-			</div>
-		</div>
-		
-	</body>
+</div>
+<div class="panelMacro">
+<table style="background-image: none;" class="noteMacro">
+<tbody>
+<tr>
+<td>
+<b>Hinweis</b>
+<br>
+<p class="last">Dieser Bereich zeichnet sich dadurch aus, dass er Ã¼ber die komplette Breite geht und mit der dargestellten Farbe hinterlegt wird.<br>Auch das Icon ist fÃ¼r diesen Bereich spezifisch. Optional kann das Icon entfernt werden.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="panelMacro">
+<table class="noteMacro">
+<colgroup>
+<col width="24">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td valign="top">
+<img src="/images/icons/emoticons/warning.png" alt="" align="absmiddle" border="0" height="16" width="16">
+</td>
+<td>
+<b>Note</b>
+<br>
+<p class="last">Dieser Bereich zeichnet sich dadurch aus, dass er Ã¼ber die komplette Breite geht und mit der dargestellten Farbe hinterlegt wird.<br>Auch das Icon ist fÃ¼r diesen Bereich spezifisch. Optional kann das Icon entfernt werden.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="panelMacro">
+<table class="tipMacro">
+<colgroup>
+<col width="24">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td valign="top">
+<img src="/images/icons/emoticons/check.png" alt="" align="absmiddle" border="0" height="16" width="16">
+</td>
+<td>
+<b>Tip</b>
+<br>
+<p class="last">Dieser Bereich zeichnet sich dadurch aus, dass er Ã¼ber die komplette Breite geht und mit der dargestellten Farbe hinterlegt wird. <br class="atl-forced-newline">Auch das Icon ist fÃ¼r diesen Bereich spezifisch. Optional kann das Icon entfernt werden.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="panelMacro">
+<table class="infoMacro">
+<colgroup>
+<col width="24">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td valign="top">
+<img src="/images/icons/emoticons/information.png" alt="" align="absmiddle" border="0" height="16" width="16">
+</td>
+<td>
+<b>Info</b>
+<br>
+<p class="last">Dieser Bereich zeichnet sich dadurch aus, dass er Ã¼ber die komplette Breite geht und mit der dargestellten Farbe hinterlegt wird. <br class="atl-forced-newline">Auch das Icon ist fÃ¼r diesen Bereich spezifisch. Optional kann das Icon entfernt werden.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="panelMacro">
+<table class="warningMacro">
+<colgroup>
+<col width="24">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td valign="top">
+<img src="/images/icons/emoticons/forbidden.png" alt="" align="absmiddle" border="0" height="16" width="16">
+</td>
+<td>
+<b>Warning</b>
+<br>
+<p class="last">Dieser Bereich zeichnet sich dadurch aus, dass er Ã¼ber die komplette Breite geht und mit der dargestellten Farbe hinterlegt wird. <br class="atl-forced-newline">Auch das Icon ist fÃ¼r diesen Bereich spezifisch. Optional kann das Icon entfernt werden.</p>â€‹â€‹â€‹â€‹â€‹</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
+</body>
 </html>
+
