@@ -16,7 +16,7 @@ a {
     color:#666;
 }
 
-/*** @export "maincontent" css */
+/*** @export "toc" css */
 #main-content {
     max-width:600px;
 }
