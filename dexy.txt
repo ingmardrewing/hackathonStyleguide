@@ -2,5 +2,5 @@ screenshots.js|casperjs
 mockup/style.css|idio
 markdown/_header.html|jinja
 markdown/_footer.html|jinja
-markdown/*.html|markdown|jinja
+markdown/*part.html|markdown|jinja
 styleguide.html|markdown|jinja
