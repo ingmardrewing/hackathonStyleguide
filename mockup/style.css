@@ -30,11 +30,13 @@ a {
     font-weight:normal;
 }
 
+/*** @export "title" css*/
 #title-heading * {
     font-size:26px;
     line-height:32px;
     color:#000;
 }
+/*** @end */
 
 #ExampleContentPage-UeberschriftH1 { 
     font-size:22px;
@@ -111,7 +113,7 @@ div.table-wrap table thead tr {
     color:#fff;
 }
 
-/*** @export "table-wrap" */
+/*** @export "table-wrap" css*/
 div.table-wrap table thead tr th {
    margin:0; 
     border:0;
@@ -153,6 +155,8 @@ div.table-wrap table tbody tr:first-child th {
 
 blockquote { }
 
+
+/*** @export "panel" css*/
 div.panel {
     background-color:#e5e5e5;
     padding:14px;
@@ -174,6 +178,7 @@ div.panelMacro table.tipMacro {
     background-color:#e5e5e5;
 }
 div.panelMacro td:first {} 
-div.panelMacro td:first + td {} 
+div.panelMacro td:first + td {}
+/*** end */
 
 
