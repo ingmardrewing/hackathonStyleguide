@@ -18,7 +18,7 @@ a {
 
 /*** @export "toc" css */
 #main-content {
-    max-width:600px;
+    max-width:980px;
 }
 
 /*** @export "title" css */
@@ -34,7 +34,7 @@ a {
     font-weight:normal;
     font-size:22px;
     line-height:27px;
-    color:#000;
+    color:#FF0000;
     border-bottom:1px solid #bebebe;
 }
 
@@ -118,7 +118,6 @@ div.table-wrap table thead tr {
     color:#fff;
 }
 
-/*** @export "table-wrap" css */
 div.table-wrap table thead tr th {
    margin:0; 
     border:0;
