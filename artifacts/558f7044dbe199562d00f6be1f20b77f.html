@@ -1,0 +1,307 @@
+<p><html>
+  <head>
+  	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  	<style>
+  		.hll { background-color: #ffffcc }
+.c { color: #60a0b0; font-style: italic } /* Comment */
+.err { border: 1px solid #FF0000 } /* Error */
+.k { color: #007020; font-weight: bold } /* Keyword */
+.o { color: #666666 } /* Operator */
+.cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.cp { color: #007020 } /* Comment.Preproc */
+.c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.gd { color: #A00000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #FF0000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #00A000 } /* Generic.Inserted */
+.go { color: #888888 } /* Generic.Output */
+.gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #0044DD } /* Generic.Traceback */
+.kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #007020 } /* Keyword.Pseudo */
+.kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #902000 } /* Keyword.Type */
+.m { color: #40a070 } /* Literal.Number */
+.s { color: #4070a0 } /* Literal.String */
+.na { color: #4070a0 } /* Name.Attribute */
+.nb { color: #007020 } /* Name.Builtin */
+.nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.no { color: #60add5 } /* Name.Constant */
+.nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.ne { color: #007020 } /* Name.Exception */
+.nf { color: #06287e } /* Name.Function */
+.nl { color: #002070; font-weight: bold } /* Name.Label */
+.nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.nt { color: #062873; font-weight: bold } /* Name.Tag */
+.nv { color: #bb60d5 } /* Name.Variable */
+.ow { color: #007020; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #40a070 } /* Literal.Number.Float */
+.mh { color: #40a070 } /* Literal.Number.Hex */
+.mi { color: #40a070 } /* Literal.Number.Integer */
+.mo { color: #40a070 } /* Literal.Number.Oct */
+.sb { color: #4070a0 } /* Literal.String.Backtick */
+.sc { color: #4070a0 } /* Literal.String.Char */
+.sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.s2 { color: #4070a0 } /* Literal.String.Double */
+.se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.sh { color: #4070a0 } /* Literal.String.Heredoc */
+.si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.sx { color: #c65d09 } /* Literal.String.Other */
+.sr { color: #235388 } /* Literal.String.Regex */
+.s1 { color: #4070a0 } /* Literal.String.Single */
+.ss { color: #517918 } /* Literal.String.Symbol */
+.bp { color: #007020 } /* Name.Builtin.Pseudo */
+.vc { color: #bb60d5 } /* Name.Variable.Class */
+.vg { color: #bb60d5 } /* Name.Variable.Global */
+.vi { color: #bb60d5 } /* Name.Variable.Instance */
+.il { color: #40a070 } /* Literal.Number.Integer.Long */
+  		body {
+  			background: #c7c7c7;
+  			font-family: Arial;
+  		}
+
+		#wrapper {
+			width: 800px;
+  			margin: 0 auto;
+  			background: #FFF;
+  			padding: 30px 30px;
+		}
+/*
+		img {
+			float: left;
+		}
+		
+		.highlight {
+			float: left;
+		}
+*/		
+		pre {
+			display: inline-block;
+		}
+  	</style>
+  </head>
+  <body>
+  <div id="wrapper"></p>
+<p><h1 id="styleguide-fur-die-wiki-detailseite">Styleguide für die Wiki-Detailseite</h1>
+<h3 id="in-diesem-styleguide-werden-alle-wesentlichen-inhaltselemente-einer-wiki-detailseite-beschrieben">In diesem Styleguide werden alle wesentlichen Inhaltselemente einer Wiki-Detailseite beschrieben.</h3></p>
+<p><h2 id="seitentitel-und-seiteninformation">Seitentitel und Seiteninformation</h2>
+<p>Der Seitentitel erscheint auf jeder Wiki-Seite als erstes Element. Er sollte sich in seiner Größe deutlich von der H1 unterscheiden. Darunter erscheinen in Confluence immer die Seiteninformationen, die wichtige Confluence Funktionen enthalten und daher nicht ausgeblendet werden sollten.</p>
+<p><img alt="Screenshot von Seitentitel und Seiteninformation" src="title.png" />
+<div class="highlight"><pre><a name="mockup--style.css-idio.html-24"></a><span class="nf">#title-heading</span> <span class="o">*</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-25"></a>    <span class="k">font-weight</span><span class="o">:</span><span class="k">normal</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-26"></a>    <span class="k">font-size</span><span class="o">:</span><span class="m">26px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-27"></a>    <span class="k">line-height</span><span class="o">:</span><span class="m">32px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-28"></a>    <span class="k">color</span><span class="o">:</span><span class="m">#000</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-29"></a><span class="p">}</span>
+</pre></div>
+</p></p>
+<p><h2 id="table-of-content">Table of Content</h2>
+<p>Die Aufzählungszeichen beim Table-of-Content entsprechen den Bulltet-Points bei einer Aufzählungsliste und müssen für alle sechs Überschrifthierarchien definiert sein.</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-19"></a><span class="nf">#main-content</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-20"></a>    <span class="k">max-width</span><span class="o">:</span><span class="m">600px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-21"></a><span class="p">}</span>
+</pre></div>
+</p></p>
+<p><h2 id="headlines">Headlines</h2>
+<p>Für die Überschriften ist die Arial - entsprechend den Corporate Design Richtlinien - im Einsatz. Unterhalb von H1 und H2 befindet sich eine Linie, die über die gesamte Seitenbreite reicht und damit die Seite strukturiert. Die sechs Überschriften unterscheiden sich deutlich voneinander, sodass eine klare Hierarchie erkennbar ist. Die Abstände unterhalb der Überschriften zu den darauffolgenden Elementen unterscheiden sich entsprechend der Schriftgrößen der Überschriften.</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-32"></a><span class="nf">#ExampleContentPage-UeberschriftH1</span> <span class="p">{</span> 
+<a name="mockup--style.css-idio.html-33"></a>    <span class="k">font-weight</span><span class="o">:</span><span class="k">normal</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-34"></a>    <span class="k">font-size</span><span class="o">:</span><span class="m">22px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-35"></a>    <span class="k">line-height</span><span class="o">:</span><span class="m">27px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-36"></a>    <span class="k">color</span><span class="o">:</span><span class="m">#000</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-37"></a>    <span class="k">border-bottom</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#bebebe</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-38"></a><span class="p">}</span>
+</pre></div>
+</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-41"></a><span class="nf">#ExampleContentPage-UeberschriftH2</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-42"></a>    <span class="k">font-weight</span><span class="o">:</span><span class="k">normal</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-43"></a>    <span class="k">font-size</span><span class="o">:</span><span class="m">20px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-44"></a>    <span class="k">line-height</span><span class="o">:</span><span class="m">25px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-45"></a>    <span class="k">color</span><span class="o">:</span><span class="m">#666</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-46"></a>    <span class="k">border-bottom</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#bebebe</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-47"></a><span class="p">}</span>
+</pre></div>
+</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-50"></a><span class="nf">#ExampleContentPage-UeberschriftH3</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-51"></a>    <span class="k">font-weight</span><span class="o">:</span><span class="k">normal</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-52"></a>    <span class="k">font-size</span><span class="o">:</span><span class="m">18px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-53"></a>    <span class="k">line-height</span><span class="o">:</span><span class="m">23px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-54"></a>    <span class="k">color</span><span class="o">:</span><span class="m">#000</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-55"></a><span class="p">}</span>
+</pre></div>
+</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-58"></a><span class="nf">#ExampleContentPage-UeberschriftH4</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-59"></a>    <span class="k">font-weight</span><span class="o">:</span><span class="k">normal</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-60"></a>    <span class="k">font-size</span><span class="o">:</span><span class="m">16px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-61"></a>    <span class="k">line-height</span><span class="o">:</span><span class="m">21px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-62"></a>    <span class="k">color</span><span class="o">:</span><span class="m">#666</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-63"></a><span class="p">}</span>
+</pre></div>
+</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-66"></a><span class="nf">#ExampleContentPage-UeberschriftH5</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-67"></a>    <span class="k">font-weight</span><span class="o">:</span><span class="k">normal</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-68"></a>    <span class="k">font-size</span><span class="o">:</span><span class="m">14px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-69"></a>    <span class="k">line-height</span><span class="o">:</span><span class="m">19px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-70"></a>    <span class="k">color</span><span class="o">:</span><span class="m">#666</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-71"></a><span class="p">}</span>
+</pre></div>
+</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-74"></a><span class="nf">#ExampleContentPage-UeberschriftH6</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-75"></a>    <span class="k">font-weight</span><span class="o">:</span><span class="k">normal</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-76"></a>    <span class="k">font-size</span><span class="o">:</span><span class="m">13px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-77"></a>    <span class="k">line-height</span><span class="o">:</span><span class="m">18px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-78"></a>    <span class="k">color</span><span class="o">:</span><span class="m">#666</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-79"></a><span class="p">}</span>
+</pre></div>
+</p></p>
+<p><h2 id="flietext">Fließtext</h2>
+<p>Für den Fließtext ist die Schrift Arial in 13 px gewählt. Externe Links sind unterstrichen und mit dem zusätzlichen Symbol versehen. Interne Links sind unterstrichen. Bei Mouseover färben sich beide Linktypen rot.
+Sofern die Abstände zwischen zwei Absätzen größer als der übliche Zeilenabstand sind, sollte das hier noch erwähnt werden.</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-5"></a><span class="nt">body</span><span class="o">,</span> <span class="nt">p</span><span class="o">,</span> <span class="nt">p</span><span class="nc">.fliesstext</span><span class="o">,</span> <span class="nt">span</span>  <span class="p">{</span>
+<a name="mockup--style.css-idio.html-6"></a>    <span class="k">font-family</span><span class="o">:</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-7"></a>    <span class="k">font-size</span><span class="o">:</span><span class="m">12px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-8"></a>    <span class="k">line-height</span><span class="o">:</span><span class="m">16px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-9"></a>    <span class="k">color</span><span class="o">:</span><span class="m">#666</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-10"></a><span class="p">}</span>
+</pre></div>
+</p></p>
+<p><h2 id="aufzahlungsliste-mit-bulletpoints">Aufzählungsliste mit Bulletpoints</h2>
+<p>Es sind 5 Aufzählungsebenen definiert. Die Grafiken entsprechen denen des Table-of-Contents. Der Zeilenabstand entspricht dem des Fließtextes.</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-100"></a><span class="nt">ol</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{}</span>
+<a name="mockup--style.css-idio.html-101"></a><span class="nt">ol</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ol</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{}</span>
+<a name="mockup--style.css-idio.html-102"></a><span class="nt">ol</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ol</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ol</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{}</span>
+</pre></div>
+</p></p>
+<p><h2 id="numerische-aufzahlungsliste">Numerische Aufzählungsliste</h2>
+<p>Für die numerische Aufzähungsliste werden die Schriftdefinitionen aus dem Fließtext übernommen.</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-82"></a><span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span> <span class="p">}</span>
+<a name="mockup--style.css-idio.html-83"></a><span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="nc">.first</span> <span class="p">{</span> <span class="p">}</span>
+<a name="mockup--style.css-idio.html-84"></a><span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="nc">.last</span> <span class="p">{</span> <span class="p">}</span>
+<a name="mockup--style.css-idio.html-85"></a>
+<a name="mockup--style.css-idio.html-86"></a><span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span> <span class="p">}</span>
+<a name="mockup--style.css-idio.html-87"></a><span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="nc">.first</span> <span class="p">{</span> <span class="p">}</span>
+<a name="mockup--style.css-idio.html-88"></a>
+<a name="mockup--style.css-idio.html-89"></a><span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span> <span class="p">}</span>
+<a name="mockup--style.css-idio.html-90"></a><span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="nc">.first</span> <span class="p">{</span> <span class="p">}</span>
+<a name="mockup--style.css-idio.html-91"></a>
+<a name="mockup--style.css-idio.html-92"></a><span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span> <span class="p">}</span>
+<a name="mockup--style.css-idio.html-93"></a><span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="nc">.first</span> <span class="p">{</span> <span class="p">}</span>
+<a name="mockup--style.css-idio.html-94"></a>
+<a name="mockup--style.css-idio.html-95"></a><span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span> <span class="p">}</span>
+<a name="mockup--style.css-idio.html-96"></a><span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="o">&gt;</span> <span class="nt">li</span><span class="nc">.first</span> <span class="p">{</span> <span class="p">}</span>
+</pre></div>
+</p></p>
+<p><h2 id="aufgabenliste">Aufgabenliste</h2>
+<p>Zu Beginn jeder Aufgabe befindet sich eine Checkbox, die Optik entspricht der typischen Browseroptik.</p>
+<p><img alt="Screenshot der Tasklist" src="tasklist.png" />
+<div class="highlight"><pre><a name="mockup--style.css-idio.html-105"></a><span class="nt">ol</span><span class="nc">.inline-task-list</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-106"></a><span class="p">}</span>
+</pre></div>
+</p></p>
+<p><h2 id="tabellen">Tabellen</h2>
+<p>Der Tabellenkopf grenzt sich durch die Hintergrundfarbe deutlich von den sonstigen Zellen ab. Die einzelnen Zeilen sind durch graue Linien voneinander getrennt</p>
+<p><img alt="Screenshot von Tabellen" src="table.png" />
+<div class="highlight"><pre><a name="mockup--style.css-idio.html-109"></a><span class="nt">table</span><span class="p">{</span>
+<a name="mockup--style.css-idio.html-110"></a>    <span class="k">border-spacing</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-111"></a>    <span class="k">margin-bottom</span><span class="o">:</span><span class="m">25px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-112"></a>    <span class="k">width</span><span class="o">:</span><span class="m">100</span><span class="o">%</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-113"></a><span class="p">}</span>
+<a name="mockup--style.css-idio.html-114"></a>
+<a name="mockup--style.css-idio.html-115"></a><span class="nt">div</span><span class="nc">.table-wrap</span> <span class="nt">table</span> <span class="nt">thead</span> <span class="nt">tr</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-116"></a>    <span class="k">background-color</span><span class="o">:</span><span class="m">#666</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-117"></a>    <span class="k">color</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-118"></a><span class="p">}</span>
+</pre></div>
+</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-121"></a><span class="nt">div</span><span class="nc">.table-wrap</span> <span class="nt">table</span> <span class="nt">thead</span> <span class="nt">tr</span> <span class="nt">th</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-122"></a>   <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> 
+<a name="mockup--style.css-idio.html-123"></a>    <span class="k">border</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-124"></a>    <span class="k">border-left</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#fff</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-125"></a><span class="p">}</span>
+<a name="mockup--style.css-idio.html-126"></a><span class="nt">div</span><span class="nc">.table-wrap</span> <span class="nt">table</span> <span class="nt">thead</span> <span class="nt">tr</span> <span class="nt">th</span><span class="nd">:first-child</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-127"></a>    <span class="k">border</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-128"></a><span class="p">}</span>
+<a name="mockup--style.css-idio.html-129"></a>
+<a name="mockup--style.css-idio.html-130"></a><span class="nt">div</span><span class="nc">.table-wrap</span> <span class="nt">table</span> <span class="nt">thead</span> <span class="nt">tr</span> <span class="nt">th</span> <span class="o">,</span>
+<a name="mockup--style.css-idio.html-131"></a><span class="nt">div</span><span class="nc">.table-wrap</span> <span class="nt">table</span> <span class="nt">tbody</span> <span class="nt">tr</span> <span class="nt">th</span> <span class="o">,</span>
+<a name="mockup--style.css-idio.html-132"></a><span class="nt">div</span><span class="nc">.table-wrap</span> <span class="nt">table</span> <span class="nt">td</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-133"></a>    <span class="k">padding</span><span class="o">:</span><span class="m">8px</span> <span class="m">8px</span> <span class="m">8px</span> <span class="m">8px</span> <span class="p">;</span>
+<a name="mockup--style.css-idio.html-134"></a><span class="p">}</span>
+<a name="mockup--style.css-idio.html-135"></a>
+<a name="mockup--style.css-idio.html-136"></a><span class="nt">div</span><span class="nc">.table-wrap</span> <span class="nt">table</span> <span class="nt">td</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-137"></a>    <span class="k">border-bottom</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#666</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-138"></a>    <span class="k">border-left</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#666</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-139"></a><span class="p">}</span>
+<a name="mockup--style.css-idio.html-140"></a><span class="nt">div</span><span class="nc">.table-wrap</span> <span class="nt">table</span> <span class="nt">td</span><span class="nd">:first-child</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-141"></a>    <span class="k">border-left</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-142"></a><span class="p">}</span>
+<a name="mockup--style.css-idio.html-143"></a>
+<a name="mockup--style.css-idio.html-144"></a><span class="nt">div</span><span class="nc">.table-wrap</span> <span class="nt">table</span> <span class="nt">th</span><span class="nc">.first</span> <span class="o">,</span>
+<a name="mockup--style.css-idio.html-145"></a><span class="nt">div</span><span class="nc">.table-wrap</span> <span class="nt">table</span> <span class="nt">th</span><span class="nc">.first</span> <span class="nt">p</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-146"></a>    <span class="k">background-color</span><span class="o">:</span><span class="m">#666</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-147"></a>    <span class="k">color</span><span class="o">:</span><span class="m">#fff</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-148"></a>    <span class="k">border-top</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#fff</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-149"></a><span class="p">}</span>
+<a name="mockup--style.css-idio.html-150"></a>
+<a name="mockup--style.css-idio.html-151"></a><span class="nt">div</span><span class="nc">.table-wrap</span> <span class="nt">table</span> <span class="nt">tbody</span> <span class="nt">tr</span><span class="nd">:first-child</span> <span class="nt">td</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-152"></a>    <span class="k">border-top</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#666</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-153"></a><span class="p">}</span>
+<a name="mockup--style.css-idio.html-154"></a><span class="nt">div</span><span class="nc">.table-wrap</span> <span class="nt">table</span> <span class="nt">tbody</span> <span class="nt">tr</span><span class="nd">:first-child</span> <span class="nt">th</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-155"></a>    <span class="k">border-top</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-156"></a><span class="p">}</span>
+</pre></div>
+</p></p>
+<p><h2 id="zitat">Zitat</h2>
+<p>Der Zitat-Text ist nicht durch eine Box hinterlegt, sondern mit einem auffälligen Icon auf der linken Seite versehen. Die Schrift ist bewusst anders gewählt als beim Fließtext, damit dieses Element sich stärker vom Rest abgrenzt.</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-160"></a><span class="nt">blockquote</span> <span class="p">{</span> 
+<a name="mockup--style.css-idio.html-161"></a>    <span class="k">background</span><span class="o">:</span><span class="sx">url(&#39;img/citation.png&#39;)</span> <span class="k">no-repeat</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-162"></a>    <span class="k">margin-left</span><span class="o">:</span><span class="m">0px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-163"></a>    <span class="k">padding-left</span><span class="o">:</span><span class="m">22px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-164"></a>    <span class="k">font-style</span><span class="o">:</span><span class="k">italic</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-165"></a><span class="p">}</span>
+</pre></div>
+</p></p>
+<p><h2 id="panelbox">Panelbox</h2>
+<p>Die Panelbox ist eine dezente Box ohne zusätzliches grafisches Element. Bei den Abständen zum Rand ist zu beachten, dass diese mit und ohne Überschrift funktioniert und beide Varianten harmonisch aussehen.</p>
+<p><img alt="Screenshot des Panels" src="panel.png" />
+<div class="highlight"><pre><a name="mockup--style.css-idio.html-168"></a><span class="nt">div</span><span class="nc">.panel</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-169"></a>    <span class="k">background-color</span><span class="o">:</span><span class="m">#e5e5e5</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-170"></a>    <span class="k">padding</span><span class="o">:</span><span class="m">14px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-171"></a>    <span class="k">margin-bottom</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-172"></a><span class="p">}</span>
+<a name="mockup--style.css-idio.html-173"></a><span class="nt">div</span><span class="nc">.panel</span> <span class="nt">p</span><span class="nc">.last</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-174"></a>    <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="cp">!important</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-175"></a>    <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-176"></a><span class="p">}</span>
+</pre></div>
+</p></p>
+<p><h2 id="weitere-boxen">Weitere Boxen</h2>
+<p>Die vier weiteren Panelboxen unterscheiden sich in der Farbgebung un dem verwendeten Icon. Abstände und Textgrößen sind gleich.</p>
+<p><div class="highlight"><pre><a name="mockup--style.css-idio.html-179"></a><span class="nt">div</span><span class="nc">.panelMacro</span> <span class="nt">table</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-180"></a>    <span class="k">margin</span><span class="o">:</span><span class="m">0</span><span class="cp">!important</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-181"></a>    <span class="k">padding</span><span class="o">:</span><span class="m">0</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-182"></a><span class="p">}</span>
+<a name="mockup--style.css-idio.html-183"></a>
+<a name="mockup--style.css-idio.html-184"></a><span class="nt">div</span><span class="nc">.panelMacro</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-185"></a>    <span class="k">margin-bottom</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-186"></a>    <span class="k">padding</span><span class="o">:</span><span class="m">14px</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-187"></a>    <span class="k">background-color</span><span class="o">:</span><span class="m">#e5e5e5</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-188"></a><span class="p">}</span>
+<a name="mockup--style.css-idio.html-189"></a><span class="nt">div</span><span class="nc">.panelMacro</span> <span class="nt">table</span><span class="nc">.tipMacro</span> <span class="p">{</span>
+<a name="mockup--style.css-idio.html-190"></a>    <span class="k">background-color</span><span class="o">:</span><span class="m">#e5e5e5</span><span class="p">;</span>
+<a name="mockup--style.css-idio.html-191"></a><span class="p">}</span>
+<a name="mockup--style.css-idio.html-192"></a><span class="nt">div</span><span class="nc">.panelMacro</span> <span class="nt">td</span><span class="nd">:first</span> <span class="p">{}</span> 
+<a name="mockup--style.css-idio.html-193"></a><span class="nt">div</span><span class="nc">.panelMacro</span> <span class="nt">td</span><span class="nd">:first</span> <span class="o">+</span> <span class="nt">td</span> <span class="p">{}</span> 
+</pre></div>
+</p></p>
+<p>	</div>
+  </body>
+</html></p>
