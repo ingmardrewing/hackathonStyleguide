@@ -1,13 +1,15 @@
 /* screenshot-klassen */
 #main-header.shootMe001 { }
 
-/*** @export "body" css */
-body, p, span  {
+/*** @export "fliesstext" css */
+body, p, p.fliesstext, span  {
     font-family: Arial, Helvetica, sans-serif;
     font-size:12px;
     line-height:16px;
     color:#666;
 }
+
+/*** @end */
 
 a {
     text-decoration:none;
@@ -154,8 +156,8 @@ div.table-wrap table tbody tr:first-child th {
     border-top:0;
 }
 
-/*** @end */
 
+/*** @export "zitat" css */
 blockquote { 
     background:url('img/citation.png') no-repeat;
     margin-left:0px;
@@ -169,8 +171,12 @@ div.panel {
     padding:14px;
     margin-bottom:10px;
 }
+div.panel p.last {
+    margin:0!important;
+    padding:0;
+}
 
-div.panel p.last ,
+/*** @export "panelMacro" css */
 div.panelMacro table {
     margin:0!important;
     padding:0;
