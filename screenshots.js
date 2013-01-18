@@ -28,7 +28,35 @@ casper.then(function () {
 });
 
 casper.then(function () {
+	this.captureSelector('h1.png', '#ExampleContentPage-UeberschriftH1');
+});
+
+casper.then(function () {
+	this.captureSelector('h2.png', '#ExampleContentPage-UeberschriftH2');
+});
+
+casper.then(function () {
+	this.captureSelector('h3.png', '#ExampleContentPage-UeberschriftH3');
+});
+
+casper.then(function () {
+	this.captureSelector('h4.png', '#ExampleContentPage-UeberschriftH4');
+});
+
+casper.then(function () {
+	this.captureSelector('h5.png', '#ExampleContentPage-UeberschriftH5');
+});
+
+casper.then(function () {
+	this.captureSelector('h6.png', '#ExampleContentPage-UeberschriftH6');
+});
+
+casper.then(function () {
 	this.captureSelector('headings.png', '.screenshot_headings');
+});
+
+casper.then(function () {
+	this.captureSelector('fliesstext.png', '.screenshot_fliesstext');
 });
 
 casper.then(function () {
@@ -41,6 +69,14 @@ casper.then(function () {
 
 casper.then(function () {
 	this.captureSelector('panel.png', '.screenshot_panel');
+});
+
+casper.then(function () {
+	this.captureSelector('panelmacros.png', '.screenshot_panel_macros');
+});
+
+casper.then(function () {
+	this.captureSelector('quote.png', '.screenshot_quote');
 });
 
 casper.then(function () {
