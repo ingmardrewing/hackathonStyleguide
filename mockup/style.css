@@ -16,7 +16,7 @@ a {
 
 /*** @export "main-content" css */
 #main-content {
-    width:600px;
+    max-width:600px;
 }
 
 /*** @export "heading" css */
@@ -40,12 +40,14 @@ a {
     font-size:22px;
     line-height:27px;
     color:#000;
+    border-bottom:1px solid #bebebe;
 }
 
 #ExampleContentPage-UeberschriftH2 {
     font-size:20px;
     line-height:25px;
     color:#666;
+    border-bottom:1px solid #bebebe;
 }
 
 #ExampleContentPage-UeberschriftH3 {
