@@ -100,6 +100,9 @@ ol > li {}
 ol > li > ol > li {}
 ol > li > ol > li > ol > li {}
 
+/*** @export "tasklist" css */
+ol.inline-task-list {
+}
 
 /*** @export "table" css */
 table{
