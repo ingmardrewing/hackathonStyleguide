@@ -77,7 +77,7 @@ a {
     color:#666;
 }
 
-/*** @export "tasklist" css */
+/*** @export "ul" css */
 ul > li { }
 ul > li.first { }
 ul > li.last { }
@@ -95,12 +95,11 @@ ul > li > ul > li > ul > li > ul > li > ul > li { }
 ul > li > ul > li > ul > li > ul > li > ul > li.first { }
 
 
+/*** @export "ol" css */
 ol > li {}
 ol > li > ol > li {}
 ol > li > ol > li > ol > li {}
 
-ul.linlie-task-list li {
-}
 
 /*** @export "table" css */
 table{
