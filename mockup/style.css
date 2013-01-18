@@ -1,0 +1,124 @@
+/* screenshot-klassen */
+#main-header.shootMe001 { }
+
+/*** @export "body" css */
+body, p, span  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    line-height:16px;
+    color:#666;
+}
+
+a {
+    text-decoration:none;
+    color:#666;
+}
+
+/*** @export "main-content" css */
+#main-content {
+    width:600px;
+}
+
+/*** @export "heading" css */
+#title-heading ,
+#ExampleContentPage-UeberschriftH1, 
+#ExampleContentPage-UeberschriftH2,
+#ExampleContentPage-UeberschriftH3,
+#ExampleContentPage-UeberschriftH4,
+#ExampleContentPage-UeberschriftH5,
+#ExampleContentPage-UeberschriftH6 {
+    font-weight:normal;
+}
+
+#title-heading * {
+    font-size:26px;
+    line-height:32px;
+    color:#000;
+}
+
+#ExampleContentPage-UeberschriftH1 { 
+    font-size:22px;
+    line-height:27px;
+    color:#000;
+}
+
+#ExampleContentPage-UeberschriftH2 {
+    font-size:20px;
+    line-height:25px;
+    color:#666;
+}
+
+#ExampleContentPage-UeberschriftH3 {
+    font-size:18px;
+    line-height:23px;
+    color:#000;
+}
+
+#ExampleContentPage-UeberschriftH4 {
+    font-size:16px;
+    line-height:21px;
+    color:#666;
+}
+
+#ExampleContentPage-UeberschriftH5 {
+    font-size:14px;
+    line-height:19px;
+    color:#666;
+}
+
+#ExampleContentPage-UeberschriftH6 {
+    font-size:13px;
+    line-height:18px;
+    color:#666;
+}
+
+/*** @export "tasklist" css */
+ul > li { }
+ul > li.first { }
+ul > li.last { }
+
+ul > li > ul > li { }
+ul > li > ul > li.first { }
+
+ul > li > ul > li > ul > li { }
+ul > li > ul > li > ul > li.first { }
+
+ul > li > ul > li > ul > li > ul > li { }
+ul > li > ul > li > ul > li > ul > li.first { }
+
+ul > li > ul > li > ul > li > ul > li > ul > li { }
+ul > li > ul > li > ul > li > ul > li > ul > li.first { }
+
+
+ol > li {}
+ol > li > ol > li {}
+ol > li > ol > li > ol > li {}
+
+ul.linlie-task-list li {
+}
+
+div.table-wrap table th {}
+
+div.table-wrap table td {}
+
+th.first, td.first {
+}
+/*** @end */
+
+blockquote {
+}
+
+div.panel {
+    background-color:#e5e5e5;
+}
+
+div.panelMacro {
+    margin-bottom:10px;
+}
+div.panelMacro table.tipMacro {
+    background-color:#e5e5e5;
+}
+div.panelMacro td:first {} 
+div.panelMacro td:first + td {} 
+
+

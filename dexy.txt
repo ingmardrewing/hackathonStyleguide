@@ -1,2 +1,5 @@
 screenshots.js|casperjs
-styleguide-dexy.md|markdown|jinja
+mockup/style.css|idio
+_header.html|jinja
+_footer.html|jinja
+styleguide.html|markdown|jinja

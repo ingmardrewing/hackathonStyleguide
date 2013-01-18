@@ -3,7 +3,7 @@ Script for taking screenshots.
 Run with "casperjs screenshots.js"
 */
 
-var index_url = 'http://localhost/~idrewing/hackathonStyleguide/index.html'
+var index_path = '/Users/kbecker/hackathon/hackathonStyleguide/mockup/index.html'
 
 var casper = require('casper').create({
 	viewportSize: {
@@ -12,7 +12,7 @@ var casper = require('casper').create({
 	}
 });
 
-casper.start(index_url, function() {
+casper.start(index_path, function() {
 });
 
 casper.then(function () {
