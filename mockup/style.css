@@ -97,12 +97,46 @@ ol > li > ol > li > ol > li {}
 ul.linlie-task-list li {
 }
 
-div.table-wrap table th {}
-
-div.table-wrap table td {}
-
-th.first, td.first {
+/*** @export "table" css */
+table{
+    border-spacing:0;
+    margin-bottom:25px;
 }
+
+div.table-wrap table thead tr {
+    background-color:#666;
+    color:#fff;
+}
+
+/*** @export "div.table-wrap table thead tr th" */
+div.table-wrap table thead tr th {
+   margin:0; 
+    border:0;
+    border-left: 1px solid #fff;
+}
+div.table-wrap table thead tr th:first-child {
+    border:0;
+}
+
+div.table-wrap table thead tr th ,
+div.table-wrap table td {
+    padding:8px 8px 8px 8px ;
+}
+
+div.table-wrap table td {
+    border-bottom:1px solid #666;
+    border-left:1px solid #666;
+}
+div.table-wrap table td:first-child {
+    border-left:0;
+}
+
+div.table-wrap table th.first ,
+div.table-wrap table th.first p {
+    background-color:#666;
+    color:#fff;
+}
+
 /*** @end */
 
 blockquote {
