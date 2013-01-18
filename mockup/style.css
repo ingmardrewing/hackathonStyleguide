@@ -101,6 +101,7 @@ ul.linlie-task-list li {
 table{
     border-spacing:0;
     margin-bottom:25px;
+    width:100%;
 }
 
 div.table-wrap table thead tr {
@@ -108,7 +109,7 @@ div.table-wrap table thead tr {
     color:#fff;
 }
 
-/*** @export "div.table-wrap table thead tr th" */
+/*** @export "table-wrap" */
 div.table-wrap table thead tr th {
    margin:0; 
     border:0;
@@ -119,6 +120,7 @@ div.table-wrap table thead tr th:first-child {
 }
 
 div.table-wrap table thead tr th ,
+div.table-wrap table tbody tr th ,
 div.table-wrap table td {
     padding:8px 8px 8px 8px ;
 }
@@ -135,12 +137,19 @@ div.table-wrap table th.first ,
 div.table-wrap table th.first p {
     background-color:#666;
     color:#fff;
+    border-top: 1px solid #fff;
+}
+
+div.table-wrap table tbody tr:first-child td {
+    border-top: 1px solid #666;
+}
+div.table-wrap table tbody tr:first-child th {
+    border-top:0;
 }
 
 /*** @end */
 
-blockquote {
-}
+blockquote { }
 
 div.panel {
     background-color:#e5e5e5;
