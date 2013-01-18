@@ -153,10 +153,20 @@ blockquote { }
 
 div.panel {
     background-color:#e5e5e5;
+    padding:14px;
+    margin-bottom:10px;
+}
+
+div.panel p.last ,
+div.panelMacro table {
+    margin:0!important;
+    padding:0;
 }
 
 div.panelMacro {
     margin-bottom:10px;
+    padding:14px;
+    background-color:#e5e5e5;
 }
 div.panelMacro table.tipMacro {
     background-color:#e5e5e5;
