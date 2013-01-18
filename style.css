@@ -1,7 +1,7 @@
 /* screenshot-klassen */
 #main-header.shootMe001 { }
 
-/*** @export Fließtext, Default Darstellung */
+/*** @export "body" */
 body, p, span  {
     font-family: Arial, Helvetica, sans-serif;
     font-size:12px;
@@ -14,12 +14,12 @@ a {
     color:#666;
 }
 
-/*** @export Dokumentenbreite wird via #main-content definiert */
+/*** @export "#main-content" */
 #main-content {
     width:600px;
 }
 
-/*** @export Überschriftendefinition */
+/*** @export "#title-heading" */
 #title-heading ,
 #ExampleContentPage-UeberschriftH1, 
 #ExampleContentPage-UeberschriftH2,
@@ -72,6 +72,12 @@ a {
     color:#666;
 }
 
+/*** @export "div.page-metadata" */
+div.page-metadata ul li {
+    font-size:13px;
+    color:#999!important;
+}
+
 ul > li { }
 ul > li.first { }
 ul > li.last { }
@@ -96,9 +102,20 @@ ol > li > ol > li > ol > li {}
 ul.linlie-task-list li {
 }
 
-div.table-wrap table th {}
+/*** @export "div.table-wrap table thead" */
+div.table-wrap table thead {
+    background-color:#666;
+    color:#fff;
+}
 
+/*** @export "div.table-wrap table td" */
 div.table-wrap table td {}
+
+/*** @export "div.table-wrap table td" */
+div.table-wrap table td,
+div.table-wrap table th {
+    padding:10px;
+}
 
 th.first, td.first {
 }
