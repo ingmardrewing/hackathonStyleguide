@@ -1,6 +1,6 @@
 screenshots.js|casperjs
 mockup/style.css|idio
-_header.html|jinja
-_footer.html|jinja
+markdown/_header.html|jinja
+markdown/_footer.html|jinja
 markdown/*.html|markdown|jinja
 styleguide.html|markdown|jinja
