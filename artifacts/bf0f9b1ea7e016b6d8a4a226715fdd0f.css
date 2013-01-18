@@ -151,12 +151,7 @@ div.table-wrap table tbody tr:first-child th {
 
 /*** @end */
 
-blockquote { 
-    background:url('img/citation.png') no-repeat;
-    margin-left:0px;
-    padding-left:22px;
-    font-style:italic;
-}
+blockquote { }
 
 div.panel {
     background-color:#e5e5e5;
