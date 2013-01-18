@@ -20,55 +20,58 @@ a {
 }
 
 /*** @export "title" css */
-#title-heading ,
-#ExampleContentPage-UeberschriftH1, 
-#ExampleContentPage-UeberschriftH2,
-#ExampleContentPage-UeberschriftH3,
-#ExampleContentPage-UeberschriftH4,
-#ExampleContentPage-UeberschriftH5,
-#ExampleContentPage-UeberschriftH6 {
-    font-weight:normal;
-}
-
 #title-heading * {
+    font-weight:normal;
     font-size:26px;
     line-height:32px;
     color:#000;
 }
 
+/*** @export "H1" css */
 #ExampleContentPage-UeberschriftH1 { 
+    font-weight:normal;
     font-size:22px;
     line-height:27px;
     color:#000;
     border-bottom:1px solid #bebebe;
 }
 
+/*** @export "H2" css */
 #ExampleContentPage-UeberschriftH2 {
+    font-weight:normal;
     font-size:20px;
     line-height:25px;
     color:#666;
     border-bottom:1px solid #bebebe;
 }
 
+/*** @export "H3" css */
 #ExampleContentPage-UeberschriftH3 {
+    font-weight:normal;
     font-size:18px;
     line-height:23px;
     color:#000;
 }
 
+/*** @export "H4" css */
 #ExampleContentPage-UeberschriftH4 {
+    font-weight:normal;
     font-size:16px;
     line-height:21px;
     color:#666;
 }
 
+/*** @export "H5" css */
 #ExampleContentPage-UeberschriftH5 {
+    font-weight:normal;
     font-size:14px;
     line-height:19px;
     color:#666;
 }
 
+/*** @export "H6" css */
 #ExampleContentPage-UeberschriftH6 {
+    font-weight:normal;
     font-size:13px;
     line-height:18px;
     color:#666;
