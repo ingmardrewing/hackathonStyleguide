@@ -163,6 +163,7 @@ blockquote {
     font-style:italic;
 }
 
+/*** @export "panel" css */
 div.panel {
     background-color:#e5e5e5;
     padding:14px;
